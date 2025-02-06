@@ -10,6 +10,6 @@ class Socio extends Model
     /** @use HasFactory<\Database\Factories\SocioFactory> */
     use HasFactory;
 
-    protected $fillable = [''];
+    protected $fillable = ['codigo', 'nombre'];
 
 }

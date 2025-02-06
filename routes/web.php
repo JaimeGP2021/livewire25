@@ -2,6 +2,7 @@
 
 use App\Livewire\Counter;
 use App\Livewire\LibroIndex;
+use App\Livewire\SocioIndex;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
@@ -18,3 +19,4 @@ require __DIR__.'/auth.php';
 
 Route::get('/counter', Counter::class);
 Route::get('/libros', LibroIndex::class)->name('libros.index');
+Route::get('/socios', SocioIndex::class)->name('socios.index');
