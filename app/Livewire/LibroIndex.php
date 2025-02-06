@@ -50,6 +50,11 @@ class LibroIndex extends Component
         $libro->delete();
     }
 
+    public function cancelar()
+    {
+        $this->reset();
+    }
+
     public function render()
     {
         return view('livewire.libro-index')->with([
